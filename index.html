@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<form>
+    <table style="width:100%">
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="id_amount"/></td>
+            <td>
+                <select id="fromCurrency" style="background: aliceblue;width: 100px;height: 30px">
+                    <option>VND</option>
+                    <option>USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="toCurrency" style="background: aliceblue;width: 100px;height: 30px">
+                    <option>USD</option>
+                    <option>VND</option>
+                </select>
+            </td>
+            <td><input style="height: 50px;width: 100px;background: blue; color: #ffffff;
+                        font-family: 'DejaVu Sans';font-size: 16px;font-style: inherit"
+                       type="button" name="id_submit" value="Convert"
+                       onclick="convertCurrency();"/>
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+<body>
+<script src="doiTienTe.js"></script>
+</body>
+</html>
